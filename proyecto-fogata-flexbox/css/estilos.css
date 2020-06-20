@@ -1,0 +1,874 @@
+/*experimento con flexbox*/
+
+/*@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Metal+Mania&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap');
+
+
+
+html
+{
+	box-sizing: border-box;
+}
+
+body
+{
+
+    margin: 0px;
+    padding: 0px;
+	
+}
+
+.linea
+{
+	
+	width: 100%;
+	height: 4px;
+
+}
+/*---------------------------------------------------------------------*/
+.header
+{
+	width:100%;
+	/*height: 350px;*/
+	background: #C02425;
+    background: -webkit-linear-gradient(to right top, rgb(141, 2, 2), rgb(245, 183, 13));
+    background: linear-gradient(to right bottom, rgb(219, 5, 5), rgb(242, 255, 63));
+    background-size: cover;
+    overflow: hidden;
+    margin-bottom: 15px;
+
+   -webkit-box-shadow: 0px 7px 12px -7px rgba(0,0,0,0.63);
+   -moz-box-shadow: 0px 7px 12px -7px rgba(0,0,0,0.63);
+   box-shadow: 0px 7px 12px -7px rgba(0,0,0,0.63);
+}
+
+
+.header h1
+{
+	text-align: center;
+	height: 150px;
+	line-height: 150px;
+	color: white;
+	font-size:75pt;
+	font-family: 'Kaushan Script', cursive;
+    
+
+}
+
+.logo
+{
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+}
+
+.logo img{
+	border: 5px solid  rgb(250, 189, 20);
+	border-radius:70%;
+	-webkit-box-shadow: 0px 1px 1px 0.2px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 0px 1px 0.2px rgba(0,0,0,0.25);
+box-shadow: 0px 0px 1px 0.2px rgba(0,0,0,0.25)
+	
+}
+
+/*-------------------------------------------------------*/
+.padre
+{
+	width: 95%;
+	/*background: rgba(244, 247, 250, 0.938);*/
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+/*-webkit-box-shadow: 0px 1px 0px 0.1px rgba(0,0,0,0.25);
+-moz-box-shadow: 0px 1px 0px 0.1px rgba(0,0,0,0.25);
+box-shadow: 0px 1px 0px 0.1px rgba(0,0,0,0.25);*/
+
+
+}
+/* formulario */
+.hijo1
+{
+	width: 30%;
+	height: 700PX;
+	margin: 15px;
+	padding: 15px;
+
+}
+
+.caja-form
+{
+	width: 90%;
+	border:1px solid #000;
+	box-sizing: border-box;
+    -webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+
+   overflow: hidden;
+   border-radius: 5%;
+}
+.caja-form h3
+{
+	width: 100%;
+	height: 75px;
+	/*font-family: 'Kaushan Script', cursive;*/
+	font-size: 25pt;
+	padding: 0px;
+	margin: 0px;
+	line-height: 75px;
+	text-align: center;
+	color: white;
+	background: #C02425;
+    background: -webkit-linear-gradient(to right top, rgb(141, 2, 2), rgb(245, 183, 13));
+    background: linear-gradient(to right bottom, rgb(219, 5, 5), rgb(242, 255, 63));
+    background-size: cover;
+    overflow: hidden;
+
+}
+
+.hijo1 form
+{
+	width: 100%;
+	height: 520px;
+	padding: 25px;
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+
+.espacio
+{
+	width: 100%;
+	height: 30px;
+	margin-bottom: 50px;
+	border:1px solid #cac3c3a2;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	outline:none;
+}
+
+.enviar-mensaje
+{
+	text-align: center;
+
+}
+
+
+.boton
+{
+	width: 150px;
+	height: 30px;
+	margin-top: 20px;
+	cursor: pointer;
+
+}
+
+/* seccion platillos */
+.hijo2
+{
+	width:60%;
+	height: 900px;
+	margin: auto;
+	padding: 15px; 
+	text-align: left;
+  /* -webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);*/
+}
+
+.titulo-platillos
+{
+	text-align: center;
+	color: blue;
+	/*font-family: 'Kaushan Script', cursive;*/
+	font-size: 25pt;
+}
+
+.comidas
+{
+	display: flex;
+	flex-wrap: wrap;
+	height: 150px;
+	padding: 10px 0px 10px 0px;
+	overflow: hidden;
+}
+
+.negrita
+{
+	color: blue;
+	font-size: 15pt;
+}
+
+.comidas:hover
+{
+	-webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+	/*background: rgba(230, 230, 230, 0.75);*/
+}
+
+.comidas .foto
+{
+	width: 30%;
+	height: 150px;
+	overflow: hidden;
+	
+}
+.foto img
+{
+	border:1px solid #C02425;
+	margin: 0px;
+	align-items: center;
+}
+.text
+{
+	width: 60%;
+	padding: 10px;
+	height: 150px;
+
+}
+
+hr
+{
+	margin: 15px 0px 15px 0px;
+	padding: 0px;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+
+
+.hijo3
+{
+	width: 30%;
+	height: 350px;
+	text-align: center;
+	padding: 0px;
+
+	
+}
+
+.hijo3 p
+{
+	width: 100%;
+	height: 300px;
+	line-height: 50px;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+.direccion
+{
+	color: blue;
+	font-size: 20pt;
+}
+
+/*--------------------------------------------------------------------------------------*/
+
+.hijo4
+{
+	width: 60%;
+	height: 500px;
+	padding:0px 25px 0px 25px;
+	margin-left: 15px;
+	margin-right: 15px;
+	box-sizing: border-box;
+	
+	
+}
+
+
+/*---------------------------------------------------------------------------------------------*/
+
+.grupo-de-desarrollo
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 920px;
+}
+
+/*//////////////////////////////////////////*/
+.caja1
+{
+	font-size: 14pt;
+	display: flex;
+	width: 45%;
+	height: 105px;
+	margin: 15px;
+	padding: 15px;
+	-webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+}
+
+.caja1 img
+{
+	border:4px solid rgb(240,240,240,1);
+}
+
+.caja1 p
+{
+
+	padding: 0px 10px 0px 10px;
+}
+
+
+/*//////////////////////////////////////////*/
+
+.caja2
+{
+	font-size: 14pt;
+	display: flex;
+	width: 45%;
+	height: 105px;
+	margin: 15px;
+	padding: 15px;
+	-webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+}
+
+.caja2 img
+{
+	border:4px solid rgb(240,240,240,1);
+}
+
+.caja2 p
+{
+	padding: 0px 10px 0px 10px;
+}
+
+/*//////////////////////////////////////////*/
+
+.caja3
+{
+	font-size: 14pt;
+	display: flex;
+	width: 45%;
+	height: 105px;
+	margin: 15px;
+	padding: 15px;
+	-webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+}
+
+.caja3 img
+{
+	border:4px solid rgb(240,240,240,1);
+}
+
+.caja3 p
+{
+	padding: 0px 10px 0px 10px;
+}
+
+/*//////////////////////////////////////////*/
+
+.caja4
+{
+	font-size: 14pt;
+	display: flex;
+	width: 45%;
+	height: 105px;
+	margin: 15px;
+	padding: 15px;
+	-webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+}
+
+.caja4 img
+{
+	border:4px solid rgb(240,240,240,1);
+}
+
+.caja4 p
+{
+	padding: 0px 10px 0px 10px;
+}
+
+/*///////////////////////////////////////*/
+
+.caja5
+{
+	font-size: 14pt;
+	display: flex;
+	width: 45%;
+	height: 105px;
+	margin: 15px;
+	padding: 15px;
+	-webkit-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   -moz-box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+   box-shadow: 1px 0px 5px 1px rgba(0,0,0,0.25);
+}
+
+.caja5 img
+{
+	border:4px solid rgb(240,240,240,1);
+}
+
+.caja5 p
+{
+	padding: 0px 10px 0px 10px;
+}
+
+/*-------------------------------- pie de pagina ---------------------------------------------------------*/
+
+footer
+{
+	box-sizing: border-box;
+	width: 100%;
+	margin: auto;
+	
+	height: 250px;
+	background: rgb(250,250,250,.75);
+	overflow: hidden;
+}
+
+footer h2
+{
+	font-size: 15pt;
+	font-family: 'Roboto Mono', monospace;
+	width: 100%;
+	height: 50px;
+	margin-top: 10px;
+	line-height:50px;
+	text-align: center;
+}
+
+.redes
+{
+	width: 400px;
+	margin: auto;
+	height: 80px;
+	text-align: center;
+	line-height: 50px;
+	box-sizing: border-box;
+	overflow: hidden;
+
+}
+
+.redes a
+{
+	width: 85px;
+	height: 85px;
+	padding-bottom: 5px;
+	
+	text-decoration: none;
+}
+.redes img
+{
+	border:2px solid rgb(250,250,245,0.5);
+	border-radius: 100%;
+	margin:5px;
+	margin-bottom: 7px;
+	
+}	
+
+.redes img:hover
+{
+	/*background: rgb(0,10,240,1);*/
+	-webkit-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+   -moz-box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+   box-shadow: 0px 0px 5px 2px rgba(0,0,0,0.25);
+}
+
+footer h4
+{
+	text-align: center;
+	align-items: center;
+	height: 25px;
+	font-family: 'Roboto Mono', monospace;
+
+	
+}
+
+/*============= solo para cajas ==============*/
+@media screen and (max-width: 1280px)
+{
+	.caja1
+	{
+		width: 80%;
+	}
+
+	.caja2
+	{
+		width: 80%;
+	}
+
+	.caja3
+	{
+		width: 80%;
+	}
+	.caja4
+	{
+		width: 80%;
+	}
+
+	.caja5
+	{
+		width: 80%;
+	}
+
+
+
+}
+
+
+
+/*====================================================================================================*/
+/*------------------------------------ primera media query -------------------------------------------*/
+/*====================================================================================================*/
+
+@media screen and (max-width: 1200px)
+{
+	.padre
+	{
+		display:flex;
+		flex-direction:column;
+		width: 90%;
+	    margin: auto;
+	}
+
+	.hijo1
+   {
+	width: 60%;
+	height: 400PX;
+	margin:auto;
+	margin-bottom: 200px;
+   }
+   .hijo1 form
+   {
+   	height: 530px;
+   }
+
+   .boton
+   {
+	width: 200px;
+	height: 40px;
+	margin-top: 45px;
+	font-size: 25pt;
+
+   }
+
+
+/*-------------------------------------------*/
+   .hijo2
+   {
+   	margin-top: 100px;
+	width:90%;
+	height: 900px;
+	margin:auto;
+	margin-bottom: 60px;
+   }
+
+
+/*-------------------------------------------*/
+   .hijo3
+   {	
+	 width: 100%;
+	
+   }
+
+   .hijo3 p
+   {
+ 	width: 100%;
+	height: 300px;
+	text-align: center;
+   }
+
+/*-------------------------------------------*/
+
+   .hijo4
+   {
+	width: 100%;
+	height: 500px;
+	
+	
+   }
+
+   .hijo4 iframe
+    {
+ 	width: 100%;
+    }
+
+
+/*-------------------------------------------*/
+
+   .grupo-de-desarrollo
+   {
+   	display: flex;
+   	flex-wrap: wrap;
+	height: 990px;
+   }
+
+/*-------------------------------------------*/
+.caja1
+	{
+		width: 80%;
+	}
+	.caja2
+	{
+		width: 80%;
+	}
+	.caja3
+	{
+		width: 80%;
+	}
+	.caja4
+	{
+		width: 80%;
+	}
+	.caja5
+	{
+		width: 80%;
+	}
+
+
+}
+
+/*====================================================================================================*/
+/*---------------------media query para dispositivos entre 1100px a 700px de ancho en pantalla -------------------------------------------*/
+/*====================================================================================================*/
+@media screen and (max-width: 1100px)
+{
+  
+		.hijo3
+	{
+		width: 100%;
+		height: 250px;
+		margin: auto;
+		margin-bottom: 5px;
+	}
+
+	.hijo3 p
+	{
+		width: 100%;
+		height: 250px;
+		text-align: center;
+	}
+
+	.hijo4
+	{
+		width: 100%;
+		height: 400px;
+	}
+
+
+	.hijo4 iframe
+	{
+		width: 100%;
+		height: 400px;
+		margin: 0px;
+	}
+
+	.grupo-de-desarrollo
+	{
+		margin: auto;
+	}
+
+	.caja1
+	{
+		width: 80%;
+	}
+	.caja2
+	{
+		width: 80%;
+	}
+	.caja3
+	{
+		width: 80%;
+	}
+	.caja4
+	{
+		width: 80%;
+	}
+	.caja5
+	{
+		width: 80%;
+	}
+}
+
+
+
+/*====================================================================================================*/
+/*---------------- media query para todo dispositivo menor a 700px de ancho en pantalla -------------------------------------------*/
+/*====================================================================================================*/
+
+@media screen and (max-width: 700px)
+{
+  .comidas .text{
+    padding: 0px px 0px 5px;
+  }
+   .comidas p{
+     padding: 0px;
+     margin: 0px;
+   }
+	.header
+	{
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+
+
+	}
+	.header h1
+	{
+		font-size:20pt;
+		height: 75px;
+		width: 100%;
+		line-height: 75px;
+		padding: 5px;
+		margin: 0px;
+
+	}
+
+	.logo
+	{
+		height: 75px;
+		width: 100%;
+		margin: 0px;
+		padding: 5px 0px 5px 0px;
+	}
+
+	.logo img
+	{
+		height: 55px;
+		width: 55px;
+	}
+
+
+	/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+	.padre
+	{
+		flex-direction:column;
+		width: 90%;
+    margin: auto;
+	    padding: 0px;
+	}
+
+
+	.hijo1
+	{
+		width: 100%;
+
+	}
+	.hijo1 form
+	{
+		height: 500px;
+	}
+
+	.boton
+	{
+		margin-top: 0px;
+	}
+
+	.hijo2
+	{
+		width: 100%;
+	}
+
+	.hijo3
+	{
+		width: 100%;
+		height: 250px;
+		margin-bottom: 5px;
+	}
+
+	.hijo3 p
+	{
+		width: 100%;
+		height: 250px;
+		text-align: center;
+	}
+
+	.hijo4
+	{
+		width: 100%;
+		height: 300px;
+	}
+
+
+	.hijo4 iframe
+	{
+		width: 100%;
+		height: 300px;
+		margin: 0px;
+	}
+
+
+	/*+++++++++++++++++++++++++++++++++++++*/
+
+
+	.grupo-de-desarrollo
+    {
+	width: 100%;
+	height: 1500px;
+    }
+
+	.caja1
+	{
+		flex-direction: column;
+		width: 100%;
+		height: 220px;
+		margin: 0px;
+		margin-bottom:5px; 
+	}
+
+	.caja2
+	{
+		flex-direction: column;
+		width: 100%;
+		height: 220px;
+		margin: 0px;
+		margin-bottom:5px;
+	}
+
+	.caja3
+	{
+		flex-direction: column;
+		width: 100%;
+		height: 220px;
+		margin: 0px;
+		margin-bottom:5px;
+	}
+
+	.caja4
+	{
+		flex-direction: column;
+		width: 100%;
+		height: 220px;
+		margin: 0px;
+		margin-bottom:5px;
+	}
+
+	.caja5
+	{
+		flex-direction: column;
+		width: 100%;
+		height: 220px;
+		margin: 0px;
+		margin-bottom:5px;
+	}
+
+	/*/\/\/\/\/\/\/\/\/\/\/\/\/\/\*/
+	footer
+	{
+		height: 325px;
+		
+		box-sizing: border-box;
+	}
+
+	footer h2
+	{
+		height: 100px;
+	}
+}
+
+
